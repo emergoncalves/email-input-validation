@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Input Validation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col space-y-8 justify-center items-center h-screen">
+    <h1 class="font-semibold text-lg text-slate-600">Email Input Validation</h1>
+    <form action="#" class="flex flex-col items-center space-y-3">
+      <input
+        type="text"
+        name="email"
+        class="border-b border-slate-800 bg-slate-100/[0.6] focus:bg-emerald-100/[0.3] transition duration-300 ease-in-out text-center focus:outline-none focus:border-emerald-700 py-2 px-8 text-slate-600"
+        pattern="[a-zA-Z0-9.-_]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}"
+        required
+        id="email"
+        placeholder="Insert your email"
+      />
+      <input
+        type="submit"
+        class="bg-slate-800 rounded-full py-1 px-8 text-white hover:bg-emerald-700 transition duration-300 ease-in-out"
+        value="Submit"
+      />
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
